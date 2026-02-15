@@ -81,6 +81,7 @@ html, body {
     margin: 0;
     padding: 0;
     opacity: 0.8;
+    background-position: center;
 }
 .background-img6 {
     position: relative;
@@ -433,7 +434,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
 
@@ -610,7 +611,6 @@ img {
    .portfolio > div {
         box-sizing: border-box;
         flex: 1 1 calc(50% - 30px);
-        margin: 15px;
     }
     .nav_list {
         width: 300px;
@@ -618,7 +618,7 @@ img {
     .about > div {
         box-sizing: border-box;
         flex: 1 1 calc(50% - 50px);
-        margin: 15px;
+        padding-bottom: 15px;
     }
    
     .portfolio{
@@ -654,12 +654,20 @@ img {
     .mobile-menu {
         width: 250px;
     }
+    .common_portfolio {
+        display: flex;
+        gap: 20px
+    }
     .portfolio {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
 }
+    .discription_about {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     .about_me {
         display: flex;
         flex-direction: column;
@@ -677,8 +685,8 @@ img {
         margin-right: 0px;
     }
     .love_text {
-        top: 60%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
         font-size: 38px;
         color:#f9f9f9;
 }
@@ -689,6 +697,19 @@ img {
         display: flex;
         flex-direction: column;
     }
+    .contacts_text {
+        padding-left: 25%;
+    }
+    .footer_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        gap: 30px;
+}
+
    
 }
 
@@ -720,6 +741,11 @@ img {
     .main {
         margin-top: 70px;
     }
+    .discription_about {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
     .text-about {
         display: flex;
         flex-direction: column;
@@ -731,6 +757,15 @@ img {
         justify-content: space-between;
         padding-left: 15px;
     }
+    .footer_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        gap: 30px;
+}
 }
 
 
