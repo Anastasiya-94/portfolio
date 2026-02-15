@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Zi_stacy | Photographer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="background-img1">
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <div>
+                    <h1 class="header_logo">
+                    Z.A
+                    </h1>
+                    <p>Visual Storyteller and Portrait Photographer</p>
+                    </div>
+                    <ul class="nav_list">
+                        <li class="link"><a href="./index.html">Main</a></li>
+                        <li class="link"><a href="#Portfolio">Portfolio</a></li>
+                        <li class="link"><a href="#Contacts">Contacts</a></li>
+                    </ul>
+                    <button class="hamburger" aria-label="Меню">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <h3 class="background-text">An album of collected happiness.</h3>
+    </div>
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#home" class="mobile-menu__link">Main</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#Portfolio" class="mobile-menu__link">Portfolio</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#About" class="mobile-menu__link">About</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#Contacts" class="mobile-menu__link">Contacts</a>
+            </li>
+        </ul>
+    </div>
+    <main class="main">
+        <div class="container">
+            <div class="wrapper">   
+                <section id="Portfolio" class="portfolio">
+                    <div class="common_portfolio">
+                        <img src="assets/images/portfolio/Lovestory/DSCF0751.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF0754.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF0759.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF0785.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF0786.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF1127.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF3168!.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF3615.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/DSCF3655!.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/IMG_9812.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/IMG_1672.jpg" alt="portfolio" width="300">
+                        <img src="assets/images/portfolio/Lovestory/IMG_1687.jpg" alt="portfolio" width="300">
+                    </div>
+                </section>
+                <section class="background-img4">
+                <div>
+                    <form class="contact-form" action="https://formspree.io/f/ваш-id" method="POST">
+                        <div class="form-group">
+                            <label for="name">Имя *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Фамилия *</label>
+                            <input type="text" id="name" name="name" required placeholder="Ваша фамилия">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="user-phone">Телефон: *</label>
+                            <input type="tel" id="user-phone" name="user-phone" required placeholder="+7 (999) 123-45-67" pattern="\+7\s?[\(]?\d{3}[\)]?\s?\d{3}[\-]?\d{2}[\-]?\d{2}">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Какую фотосьемку хотите провести?</label>
+                            <input type="text" id="subject" name="subject" placeholder="Например: семейная">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Опишите локацию, стиль, количество человек, особые пожелания..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="fulldate">Желаемая дата проведения съемки *</label>
+                            <div class="date-input-wrapper">
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Какой способ связи вы предпочитаете? </label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">Я согласен на обработку персональных данных</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                        <p class="form-note">
+                            * — обязательные поля. Отвечу в течение 2 часов в рабочее время (10:00-20:00)
+                        </p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    </main>
+    <footer class="footer1">
+        <div id="Contacts" class="container">
+            <div class="footer_column">
+                <div class="contacts_me">
+                    <p class="contacts_text">Get in touch</p>
+                    <div class="social-contact">
+                        <div class="telephone">
+                            <img src="assets/images/hero/icon/icons8-phone-50.png" alt="Иконка телефона" width="15" height="15">
+                            <a class="telephone_text1" href="tel:+375257909873">ТЕЛЕФОН</a>
+                        </div>
+                        <div class="email">
+                            <img src="assets/images/hero/icon/Icons8/icons8-gmail-logo-50.png" alt="Иконка почты" width="15" height="15"> 
+                            <a class="email_text1" href="mailto:nastyazistasy@gmail.com">ПОЧТА</a>
+                        </div>
+                        <div class="location">
+                            <img src="assets/images/hero/icon/Icons8/icons8-whatsapp-50.png" alt="Иконка локации" width="15" height="15"> 
+                            <a class="location_text1" href="https://wa.me/89054765617">WHATSAPP</a>                   
+                        </div>
+                        <div class="location">
+                            <img src="assets/images/hero/icon/Icons8/icons8-telegram-app-50.png" alt="Иконка локации" width="15" height="15"> 
+                            <a class="location_text1" href="https://t.me/Zi_stacy">TELEGRAM</a>                  
+                        </div>
+                        <div class="instagram">
+                            <img src="assets/images/hero/icon/Icons8/icons8-instagram-50.png" alt="Иконка локации" width="15" height="15"> 
+                            <a class="instagram_text1" href="https://www.instagram.com/zi_stacy?igsh=eGZmNnYxZHVzaW52&utm_source=qr" target="_blank">INSTAGRAM</a>                   
+                        </div>
+                    </div>
+                </div>
+                <p class="footer_year"><time datetime="2026">2026</time></p>
+                <p class="footer_year"><time datetime="2026">Zinoveva Anastasiia</time></p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
